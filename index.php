@@ -90,16 +90,16 @@
                 <div class="col text-end d-none d-md-inline">
                     <ul class="nav justify-content-end align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/aboutus"><h6>About Us</h6></a>
+                            <a class="nav-link" aria-current="page" href=""><h6>About Us</h6></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/howitworks"><h6>How It Works</h6></a>
+                            <a class="nav-link" href=""><h6>How It Works</h6></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/FAQ"><h6>FAQ</h6></a>
+                            <a class="nav-link" href=""><h6>FAQ</h6></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contactus"><h6>Contact Us</h6></a>
+                            <a class="nav-link" href=""><h6>Contact Us</h6></a>
                         </li>
                     </ul>
                 </div>
@@ -145,7 +145,7 @@
                     <div class="glitch" data-text="Don’t Work !">Don’t Work !</div>
                 </h1>
                 <h4 class="text-white">Advanced advertising remarkable results</h4>
-                <button class="button1 mt-5 py-2 px-5">Schedule Your Appointment Today</button>
+                <a href="#sign_up"><button class="button1 mt-5 py-2 px-5">Schedule Your Appointment Today</button></a>
                 </div>
             </div>
             <!-- Become Driver/Partner Section -->
@@ -221,7 +221,7 @@
                             <h4 class="text-white mt-5">Profitable franchising business made available</h4>
                             <h5 class="text-white">Drop us a line. We’ll respond asap.</h5>
                         </div>
-                        <div class="section-36 col-md-7 col-12 p-4 p-md-5 text-center" id="sign_up2">
+                        <div class="col-md-7 col-12 p-4 p-md-5 text-center" id="sign_up">
                             <form id="form" class="mt-0 mt-md-5 mb-5 py-5" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                                 <?php if (! empty($formErrors)) { ?>
                                 <div class="alert alert-danger alert-dismissible" role="alert">
