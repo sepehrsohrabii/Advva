@@ -82,7 +82,7 @@
     <body>
 
         <header>
-            <nav class="navbar navbar-expand-md fixed-top mt-md-5">
+            <nav class="navbar navbar-expand-md fixed-top bg-light py-3">
                 <div class="container">
                 <div class="col align-self-center text-start">
                     <img src="/img/Advva Logo.svg" height="60px" alt="Advva Logo">
@@ -142,7 +142,7 @@
             <div class="container mt-5 vh-100 d-flex align-items-center justify-content-center text-center">
                 <div class="row justify-content-center">
                 <h1 class="text-center mt-5 mb-2 mb-md-0">Billboards</br>
-                    <div class="glitch" data-text="Doesn’t Work !">Doesn’t Work !</div>
+                    <div class="glitch" data-text="Don’t Work !">Don’t Work !</div>
                 </h1>
                 <h4 class="text-white">Advanced advertising remarkable results</h4>
                 <button class="button1 mt-5 py-2 px-5">Schedule Your Appointment Today</button>
