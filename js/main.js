@@ -3,12 +3,11 @@ $(document).ready(function(){
   	var wn = $(window).scrollTop();
     if(wn > 120){
     	$(".navbar").css("background","#f2f2f2");
-      $(".navbar").removeClass("mt-md-5");
+      $(".navbar").removeClass("py-3");
       $(".navbar").css("transition","0.3s");
     }
     else{
-    	$(".navbar").css("background","none");
-      $(".navbar").addClass("mt-md-5");
+      $(".navbar").addClass("py-3");
     }
   });
 });
