@@ -1,0 +1,36 @@
+@media (max-width:768px) {
+    .mt-7 {
+      margin-top: 200px;
+    }
+    .w-mb-100 {
+      width: 100%;
+    }
+    .bg2 {
+      background-position: top center !important;
+    }
+}
+@media (min-width: 769px) {
+  
+}
+.bg1 {
+  background-color: #F1CD83;
+}
+.bg2 {
+  background-image: url('/img/aboutus-bg1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 300px;
+} 
+.color1 {
+  color: #F2642E !important;
+}
+sub {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.mt-n-1 {
+  margin-top: -10%;
+}

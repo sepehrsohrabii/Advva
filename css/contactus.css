@@ -1,0 +1,131 @@
+@media (max-width:768px) {
+    .w-mb-100 {
+      width: 100%;
+    }
+    .bg2 {
+      background-position: top center !important;
+    }
+    .gallery-section {
+      grid-template-columns: 1fr !important;
+    }
+    .first-section-py{
+      padding-top: 900px;
+      padding-bottom: 700px;
+      text-align: center;
+    }
+}
+@media (min-width: 769px) {
+  .first-section-py{
+    padding-top: 700px;
+    padding-bottom: 600px;
+  }
+    
+}
+.bg1 {
+  background-color: #FFE6DD;
+}
+.bg2 {
+  background-image: url('/img/aboutus-bg1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 300px;
+} 
+.color1 {
+  color: #F2642E !important;
+}
+.color2 {
+  color: #666666 !important;
+}
+sub {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.mt-n-1 {
+  margin-top: -10%;
+}
+
+.gallery-section {
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery-item {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100% !important;
+	height: 100% !important;
+	background-position: center center;
+	aspect-ratio: 1;
+}
+.gallery-item1 {
+	background-image: url('/img/contact-img1.png');
+}
+.gallery-item2 {
+	background-image: url('/img/contact-img2png.png');
+}
+.gallery-item3 {
+	background-image: url('/img/contact-img3.png');
+}
+.gallery-text-bg1.active { 
+    background-color:#fff; 
+}
+.gallery-text-bg2.active { 
+    background-color:#D0D0D0; 
+}
+.gallery-text-bg3.active { 
+    background-color:#fff; 
+}
+.gallery-text-bg1:hover { 
+    background-color:#92FF85; 
+}
+.gallery-text-bg2:hover { 
+    background-color:#D0D0D0; 
+}
+.gallery-text-bg3:hover { 
+    background-color:#FF7878; 
+}
+.gallery-text {
+	color: #fff;
+}
+.gallery-text.active { 
+    
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.gallery-text1.active {
+	background-image: url('/img/contact-img1.png');
+}
+.gallery-text2.active {
+	background-image: url('/img/contact-img2png.png');
+}
+.gallery-text3.active {
+	background-image: url('/img/contact-img3.png');
+}
+
+.gallery-text-bg:hover > .gallery-text { 
+    
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.gallery-text-bg1:hover > .gallery-text {
+	background-image: url('/img/contact-img1.png');
+}
+.gallery-text-bg2:hover > .gallery-text {
+	background-image: url('/img/contact-img2png.png');
+}
+.gallery-text-bg3:hover > .gallery-text {
+	background-image: url('/img/contact-img3.png');
+}
+.gallery-text-bg.active:hover, .gallery-text-bg.active:hover > .gallery-text {
+	background: none !important;
+	color: #fff !important;
+	-webkit-text-fill-color: unset !important;
+}
