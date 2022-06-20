@@ -1,3 +1,54 @@
+<?php
+    // Check if User Coming From A Request
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        
+        // Assign Variables
+        $fname = filter_var($_POST['fname'], FILTER_SANITIZE_STRING);
+        $lname = filter_var($_POST['lname'], FILTER_SANITIZE_STRING);
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+        $company = filter_var($_POST['company'], FILTER_SANITIZE_STRING);
+        $msg = filter_var($_POST['msg'], FILTER_SANITIZE_STRING);
+        
+        // Creating Array of Errors
+        $formErrors = array();
+        if (strlen($fname) <= 3) {
+            $formErrors[] = 'Username Must Be Larger Than <strong>3</strong> Characters';
+        }
+        
+        // If No Errors Send The Email [ mail(To, Subject, Message, Headers, Parameters) ]
+        
+        // $headers = 'From: ' . $email . '\r\n';
+        $headers = 'From: advva@rs018.webhostbox.net' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $myEmail = 'info@advva.com';
+        $subject = 'Contact Form';
+        $message = "<html><body>";
+        $message .= "<div>First Name: </div>" . strip_tags($_POST['fname']) ."</br></br>";
+        $message .= "<div>Last Name: </div>" . strip_tags($_POST['lname']) ."</br></br>";
+        $message .= "<div>Company Email: </div>" . strip_tags($_POST['email']) ."</br></br>";
+        $message .= "<div>Company Name: </div>" . strip_tags($_POST['company']) ."</br></br>";
+        $message .= "<div>Message: </div>" . strip_tags($_POST['msg']) ."</br>";
+        $message .= "</body></html>";
+        
+        if (empty($formErrors)) {
+            
+            mail($myEmail, $subject, $message, $headers);
+            
+            $fname = '';
+            $lname = '';
+            $email = '';
+            $company = '';
+            $msg = '';
+            $success = '<div class="alert alert-success alert-dismissible" role="alert">
+                          
+                          We Have Recieved Your Message
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+            
+        }
+        
+    }
+?>
 <!DOCTYPE html>
 <html lang="en-US">
     <head>

@@ -26,22 +26,12 @@ galleryRows.forEach((el, index) => {
 })
 });
 
-gsap.from(".gsap1", {
-  scrollTrigger: {
-    trigger: ".gsap1",
-    start: "top bottom",
-    end: "bottom 30%",
-    toggleActions: "play reset play reset",
 
-  },
-  x: -1000,
-  duration: 0.5
-});
 gsap.from(".gsap2", {
   scrollTrigger: {
     trigger: ".gsap2",
     start: "top bottom",
-    end: "bottom 30%",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -52,7 +42,7 @@ gsap.from(".gsap3", {
   scrollTrigger: {
     trigger: ".gsap3",
     start: "top bottom",
-    end: "bottom 30%",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -63,7 +53,7 @@ gsap.from(".gsap4", {
   scrollTrigger: {
     trigger: ".gsap4",
     start: "top bottom",
-    end: "bottom 30%",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -74,7 +64,7 @@ gsap.from(".gsap5", {
   scrollTrigger: {
     trigger: ".gsap5",
     start: "top bottom",
-    end: "bottom 30%",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -86,7 +76,7 @@ gsap.from(".gsap6", {
   scrollTrigger: {
     trigger: ".gsap6",
     start: "top bottom",
-    end: "center center",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -97,7 +87,7 @@ gsap.from(".gsap7", {
   scrollTrigger: {
     trigger: ".gsap7",
     start: "top bottom",
-    end: "center center",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -108,7 +98,7 @@ gsap.from(".img-2", {
   scrollTrigger: {
     trigger: ".img-2",
     start: "top bottom",
-    end: "center center",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -119,7 +109,7 @@ gsap.from(".img-3", {
   scrollTrigger: {
     trigger: ".img-3",
     start: "top bottom",
-    end: "center center",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -130,7 +120,7 @@ gsap.from(".img-4", {
   scrollTrigger: {
     trigger: ".img-4",
     start: "top bottom",
-    end: "center center",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -141,7 +131,7 @@ gsap.from(".img-5", {
   scrollTrigger: {
     trigger: ".img-5",
     start: "top bottom",
-    end: "center center",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -152,7 +142,7 @@ gsap.from(".img-6", {
   scrollTrigger: {
     trigger: ".img-6",
     start: "top bottom",
-    end: "center center",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
@@ -163,7 +153,7 @@ gsap.from(".img-7", {
   scrollTrigger: {
     trigger: ".img-7",
     start: "top bottom",
-    end: "center center",
+    end: "bottom bottom",
     toggleActions: "play reset play reset",
     scrub: 1,
   },
